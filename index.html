@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINKIN PARK</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Фоновые эффекты -->
+  <div class="bg-noise"></div>
+  <div class="scanlines"></div>
+  <div class="particles" id="particles"></div>
+
+  <header>
+    <div class="header-inner">
+      <div class="glitch-wrap">
+        <h1 class="glitch" data-text="LINKIN PARK">LINKIN PARK</h1>
+      </div>
+      <p class="header-sub">1996 — FOREVER ∞</p>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <nav id="navbar">
+    <button class="tab-btn active" data-tab="home">
+      <span class="btn-icon">◈</span> Главная
+    </button>
+    <button class="tab-btn" data-tab="facts">
+      <span class="btn-icon">◉</span> Факты
+    </button>
+    <button class="tab-btn" data-tab="gallery">
+      <span class="btn-icon">◫</span> Галерея
+    </button>
+    <button class="tab-btn" data-tab="contact">
+      <span class="btn-icon">◎</span> Контакты
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ГЛАВНАЯ -->
+    <section id="home" class="tab-content active">
+      <div class="hero-img-wrap">
+        <img
+          src="https://vinyloteka.ru/sites/default/files/u75885/linkinpark.jpg"
+          alt="Linkin Park на сцене"
+          class="hero-img"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+        />
+        <div class="hero-img-fallback">
+          <span>LP</span>
+        </div>
+        <div class="hero-overlay">
+          <div class="hero-badge">LEGENDS OF ROCK</div>
+        </div>
+      </div>
+
+      <div class="home-content">
+        <div class="home-intro">
+          <h2 class="section-title">Добро пожаловать <span class="red">в мир</span> Linkin Park</h2>
+          <p>Linkin Park — одна из самых влиятельных рок-групп в истории музыки. Основанные в 1996 году в Агура-Хиллс, Калифорния, они переопределили границы жанра, создав неповторимый сплав ну-металла, альтернативного рока и хип-хопа.</p>
+          <p>Их дебютный альбом <em>Hybrid Theory</em> разошёлся тиражом более <strong>30 миллионов копий</strong> — это один из самых продаваемых альбомов XXI века. Но для настоящих фанатов цифры — лишь тень того, чем является их музыка.</p>
+          <p>В 2024 году группа объявила о продолжении деятельности с новой вокалисткой <strong>Эмили Армстронг</strong>, доказав: Linkin Park — это не один человек, это идея, которая живёт вечно.</p>
+        </div>
+
+        <!-- Плеер -->
+        <div class="player-section">
+          <div class="player-label">
+            <span class="red">▶</span> Самая популярная песня
+          </div>
+          <div class="player-title">IN THE END — <span class="red">1.5 млрд+ стримов</span></div>
+          <div class="player-wrap">
+            <iframe
+              id="yt-player"
+              src="https://vk.com/video-1849_456243845"
+              title="Linkin Park - In the End"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="player-note">«In the End» с альбома Hybrid Theory (2000) — визитная карточка группы и одна из самых узнаваемых песен в истории рока.</p>
+        </div>
+
+        <!-- Состав группы -->
+        <div class="members-section">
+          <h3 class="sub-title">Участники группы</h3>
+          <div class="members-grid">
+            <div class="member-card">
+              <div class="member-icon">🎤</div>
+              <div class="member-name">Честер Беннингтон</div>
+              <div class="member-role">Вокал (1996–2017)</div>
+              <div class="member-desc">Голос, в который невозможно не влюбиться. Диапазон 4+ октавы.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-icon">🎤</div>
+              <div class="member-name">Эмили Армстронг</div>
+              <div class="member-role">Вокал (2024–н.в.)</div>
+              <div class="member-desc">Новая глава истории. Мощный, эмоциональный голос.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-icon">🎙️</div>
+              <div class="member-name">Майк Шинода</div>
+              <div class="member-role">Рэп, клавиши, гитара</div>
+              <div class="member-desc">Сердце и мозг группы. Продюсер, дизайнер, лидер.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-icon">🎸</div>
+              <div class="member-name">Брэд Делсон</div>
+              <div class="member-role">Соло-гитара</div>
+              <div class="member-desc">Архитектор того самого звука, который знают все.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-icon">🥁</div>
+              <div class="member-name">Роб Бурдон</div>
+              <div class="member-role">Ударные</div>
+              <div class="member-desc">Ритмическая основа, без которой нет Linkin Park.</div>
+            </div>
+            <div class="member-card">
+              <div class="member-icon">🎛️</div>
+              <div class="member-name">Джо Хан</div>
+              <div class="member-role">Диджей, сэмплирование</div>
+              <div class="member-desc">Хаос электроники, превращённый в искусство.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФАКТЫ -->
+    <section id="facts" class="tab-content">
+      <h2 class="section-title">7 фактов о <span class="red">Linkin Park</span></h2>
+      <p class="section-sub">Вещи, которые вы, возможно, не знали о легендах рока</p>
+      <ol class="facts-list">
+        <li class="fact-item">
+          <div class="fact-num">01</div>
+          <div class="fact-body">
+            <h4>Они начинали под другим именем</h4>
+            <p>Группа была основана в 1996 году как <strong>Xero</strong>. Затем переименовалась в <strong>Hybrid Theory</strong> — именно так назван их дебютный альбом. Имя «Linkin Park» пришло от названия парка Линкольна в Лос-Анджелесе, но доменное имя уже было занято — пришлось изменить написание.</p>
+          </div>
+        </li>
+        <li class="fact-item">
+          <div class="fact-num">02</div>
+          <div class="fact-body">
+            <h4>Hybrid Theory отвергли все лейблы</h4>
+            <p>Перед подписанием с Warner Bros. группа получила отказ от <strong>более чем 20 крупных лейблов</strong>. Сегодня этот альбом — один из самых продаваемых в XXI веке с тиражом 30+ млн копий. Отказавшие, должно быть, кусают локти.</p>
+          </div>
+        </li>
+        <li class="fact-item">
+          <div class="fact-num">03</div>
+          <div class="fact-body">
+            <h4>Майк Шинода — дипломированный дизайнер</h4>
+            <p>До мировой славы Майк окончил институт дизайна ArtCenter College of Design. Он лично разрабатывал ранний визуальный стиль группы, обложки и графику — с художественным образованием это видно сразу.</p>
+          </div>
+        </li>
+        <li class="fact-item">
+          <div class="fact-num">04</div>
+          <div class="fact-body">
+            <h4>«Numb» — интернет-феномен</h4>
+            <p>Клип «Numb» набрал на YouTube <strong>свыше 1.7 миллиарда просмотров</strong>. Кроме того, мем «Numb/Encore» с Jay-Z сделал их коллаборативный альбом <em>Collision Course</em> культурным явлением 2000-х. Просто так не бывает.</p>
+          </div>
+        </li>
+        <li class="fact-item">
+          <div class="fact-num">05</div>
+          <div class="fact-body">
+            <h4>Честер пережил тяжёлое детство</h4>
+            <p>Вокалист открыто рассказывал о пережитом насилии в детстве и борьбе с зависимостями. Именно этот опыт сделал тексты Linkin Park такими пронзительно честными. Боль превращалась в искусство — и миллионы людей чувствовали себя услышанными.</p>
+          </div>
+        </li>
+        <li class="fact-item">
+          <div class="fact-num">06</div>
+          <div class="fact-body">
+            <h4>Linkin Park — одна из немногих групп, которые вернулись</h4>
+            <p>После смерти Честера в 2017 году многие думали, что группа исчезнет навсегда. Но в 2024 году они представили нового вокалиста Эмили Армстронг и выпустили новый сингл, собрав <strong>миллионы просмотров за первые сутки</strong>.</p>
+          </div>
+        </li>
+        <li class="fact-item">
+          <div class="fact-num">07</div>
+          <div class="fact-body">
+            <h4>«In the End» чуть не ушла в корзину</h4>
+            <p>По словам участников группы, песня долго пролежала незаконченной и несколько раз почти не попала на альбом. В итоге именно она стала символом эпохи. Иногда стоит доделать то, что кажется «не тем».</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ГАЛЕРЕЯ -->
+    <section id="gallery" class="tab-content">
+      <h2 class="section-title">Галерея <span class="red">моментов</span></h2>
+      <p class="section-sub">История в кадрах — от гаражей до стадионов</p>
+      <div class="gallery-grid">
+        <div class="gallery-item gi-large">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Linkin_Park_performs_at_Rock_in_Rio_2012.jpg/800px-Linkin_Park_performs_at_Rock_in_Rio_2012.jpg"
+               alt="Rock in Rio 2012" onerror="this.parentElement.classList.add('img-error')">
+          <div class="gallery-caption">Rock in Rio, 2012</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Hybrid_Theory_album_cover.jpg/400px-Hybrid_Theory_album_cover.jpg"
+               alt="Hybrid Theory" onerror="this.parentElement.classList.add('img-error')">
+          <div class="gallery-caption">Hybrid Theory — 2000</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Meteora_album_cover.jpg/400px-Meteora_album_cover.jpg"
+               alt="Meteora" onerror="this.parentElement.classList.add('img-error')">
+          <div class="gallery-caption">Meteora — 2003</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Chester_Bennington_with_Linkin_Park_at_Reading_Festival_2011.jpg/400px-Chester_Bennington_with_Linkin_Park_at_Reading_Festival_2011.jpg"
+               alt="Chester Bennington" onerror="this.parentElement.classList.add('img-error')">
+          <div class="gallery-caption">Chester Bennington — Reading 2011</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mike_Shinoda_Linkin_Park_Projekt_Revolution_2008.jpg/400px-Mike_Shinoda_Linkin_Park_Projekt_Revolution_2008.jpg"
+               alt="Mike Shinoda" onerror="this.parentElement.classList.add('img-error')">
+          <div class="gallery-caption">Mike Shinoda — Projekt Revolution, 2008</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Minutes_to_Midnight.jpg/400px-Minutes_to_Midnight.jpg"
+               alt="Minutes to Midnight" onerror="this.parentElement.classList.add('img-error')">
+          <div class="gallery-caption">Minutes to Midnight — 2007</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contact" class="tab-content">
+      <h2 class="section-title">Обратная <span class="red">связь</span></h2>
+      <p class="section-sub">Поделитесь тем, что значит для вас эта группа</p>
+      <div class="contact-wrap">
+        <div class="contact-quote">
+          <blockquote>
+            «In the end, it doesn't even matter» — но ваше мнение нам важно.
+          </blockquote>
+        </div>
+        <div class="form-card">
+          <div class="form-group">
+            <label for="name-input">Ваше имя</label>
+            <input type="text" id="name-input" placeholder="Как вас зовут?">
+          </div>
+          <div class="form-group">
+            <label for="msg-input">Сообщение</label>
+            <textarea id="msg-input" rows="5" placeholder="Напишите, что для вас значат Linkin Park..."></textarea>
+          </div>
+          <button class="submit-btn" onclick="handleSubmit()">
+            <span>ОТПРАВИТЬ</span>
+            <div class="btn-glow"></div>
+          </button>
+          <div class="form-success" id="form-success">
+            ✓ Сообщение принято. Спасибо за связь!
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h4>Официальные ресурсы</h4>
+          <div class="social-grid">
+            <a href="https://www.linkinpark.com" target="_blank" class="social-link">🌐 Официальный сайт</a>
+            <a href="https://www.youtube.com/@linkinpark" target="_blank" class="social-link">▶ YouTube</a>
+            <a href="https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz" target="_blank" class="social-link">♫ Spotify</a>
+            <a href="https://www.instagram.com/linkinpark" target="_blank" class="social-link">◈ Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">LP</div>
+      <div class="footer-info">
+        <p>Студент: <strong>Ковалева Полина Сергеевна</strong> | Группа: <strong>23-03 ИСиП</strong> | 2026</p>
+      </div>
+      <p class="footer-quote">Linkin Park</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
